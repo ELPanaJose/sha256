@@ -1,0 +1,18 @@
+{
+    "name": "monda",
+    "version": "1.0.0",
+    "description": "",
+    "main": "systeminfo.js",
+    "scripts": {
+       "start": "node sha256.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "chalk": "^4.1.0",
+        "crypto": "^1.0.1",
+        "figlet": "^1.5.0"
+    }
+}
