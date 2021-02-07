@@ -1,5 +1,5 @@
 # sha256
-this is a simple tool to encrypt to a 64 characters hash!
+this is a simple tool to encrypt to a 32 characters hash!
 
 
 ```
