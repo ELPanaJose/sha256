@@ -18,8 +18,16 @@ console.log(
   chalk.blueBright("[!] this is a tool to encrypt to a 32 characters hash!")
 );
 
-let rawI = prompt(`[?] what do you want to encrypt? : `);
-// the constant of the encriptation
-const encrypter = crypto.createHmac("sha256", "").update(rawI).digest("hex");
+for (var i = 1; i > 0; i++) {
+  let rawI = prompt(`[?] value to encrypt? : `);
 
-console.log((chalk.cyan)`[*] your hash: ${encrypter}`);
+  if (rawI == "") {
+    console.log("[!] no input!");
+  } else {
+    const encrypter = crypto
+      .createHmac("sha256", "")
+      .update(rawI)
+      .digest("hex");
+    console.log(chalk.greenBright`[*] your hash : ${encrypter}`);
+  }
+}
