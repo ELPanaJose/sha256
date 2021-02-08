@@ -9,4 +9,4 @@ npm i
 npm start
 ```
 
-![](https://media.discordapp.net/attachments/788591388233170954/808040363549786128/unknown.png?width=825&height=472)
+![](https://media.discordapp.net/attachments/786752885982625862/808183954871025664/unknown.png?width=670&height=461)
