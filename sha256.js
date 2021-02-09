@@ -15,7 +15,7 @@ console.log(
   )
 );
 console.log(
-  chalk.blueBright("[!] this is a tool to encrypt to a varius types of hashes!")
+  chalk.blueBright("[!] this is a tool to encrypt to a various types of hashes!")
 );
 
 for (var i = 1; i > 0; i++) {
