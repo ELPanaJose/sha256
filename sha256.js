@@ -15,7 +15,7 @@ console.log(
   )
 );
 console.log(
-  chalk.blueBright("[!] this is a tool to encrypt to a 32 characters hash!")
+  chalk.blueBright("[!] this is a tool to encrypt to a varius types of hashes!")
 );
 
 for (var i = 1; i > 0; i++) {
@@ -25,9 +25,33 @@ for (var i = 1; i > 0; i++) {
     console.log("[!] no input!");
   } else {
     const encrypter = crypto
+      .createHmac("md5", "")
+      .update(rawI)
+      .digest("hex");
+    console.log(chalk.greenBright`[*] your hash(md5) : ${encrypter}`);
+
+    const encrypters1 = crypto
+      .createHmac("sha1", "")
+      .update(rawI)
+      .digest("hex");
+    console.log(chalk.greenBright`[*] your hash(sha1) : ${encrypters1}`);
+
+    const encrypter224 = crypto
+      .createHmac("sha224", "")
+      .update(rawI)
+      .digest("hex");
+    console.log(chalk.greenBright`[*] your hash(sha224) : ${encrypter224}`);
+
+    const encrypter2 = crypto
       .createHmac("sha256", "")
       .update(rawI)
       .digest("hex");
-    console.log(chalk.greenBright`[*] your hash : ${encrypter}`);
+    console.log(chalk.greenBright`[*] your hash(sha256) : ${encrypter2}`);
+
+     const encrypter3 = crypto
+      .createHmac("sha512", "")
+      .update(rawI)
+      .digest("hex");
+    console.log(chalk.greenBright`[*] your hash(sha512) : ${encrypter3}`);
   }
 }
